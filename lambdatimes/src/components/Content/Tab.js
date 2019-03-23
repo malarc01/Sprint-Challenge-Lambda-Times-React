@@ -6,7 +6,7 @@ const Tab = props => {
       if it is not it should just be 'tab'*/
   return (
     <div
-      className={`tab ${props.tab===props.selectedTab ? 'active-tab' :''}`}
+      className={`tab ${props.tab===props.selectedTab ? 'active-tab' :null}`}
       onClick={(clickevent) => {
         props.selectTabHandler(props.tab);
         console.log('clicked on tab')

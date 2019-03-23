@@ -17,15 +17,11 @@ width: 100%;
 height: 120px;
 margin-top: 44px;
 padding-bottom: 15px;
-
-
 `;
 
 const Date = styled.span`
 margin-left: 25px;
 flex: 1;
-
-
 `;
 const Temp = styled.span`
 text-align: right;

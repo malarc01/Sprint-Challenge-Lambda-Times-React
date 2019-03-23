@@ -32,16 +32,11 @@ export default class Content extends Component {
   filterCards = () => {
 
 if (this.state.selected==='all')
-{ this.state.cards; console.log('ALL cards have been selected')}
+{this.state.cards;}
 
 
 
-else{console.log('other tab has been selected')}
-
-
-
-
-
+else{ return this.state.cards.filter((object)=>(object.tab ===this.state.selected)}
 
     /* Right now this function only returns the cards on state.
       We're going to make this function more dynamic
@@ -55,7 +50,7 @@ else{console.log('other tab has been selected')}
           of the items from cardData.
         - else, it should only return those cards whose 'tab' matched this.state.selected.
     */
-    return this.state.cards;
+
   };
 
   render() {
